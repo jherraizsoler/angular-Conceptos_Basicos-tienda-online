@@ -12,5 +12,6 @@ export class Producto {
     public description: String, 
     public precio: Number
   ){}
+  // Muy buenas
 
 }
