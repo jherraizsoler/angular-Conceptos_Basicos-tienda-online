@@ -1,12 +1,16 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ListadoProductos } from "./listado-productos/listado-productos";
+import { Producto } from "./listado-productos/producto/producto";
+import { MostrarMensaje } from "./mostrar-mensaje/mostrar-mensaje";
+import { Replicador } from "./replicador/replicador";
+import { Saludar } from "./saludar/saludar";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
+  imports: [ListadoProductos, Producto, MostrarMensaje, Replicador, Saludar]
 })
 export class App {
-  protected title = 'tienda-online';
+  titulo = 'Aprendiendo y reconociendo Angular';
 }

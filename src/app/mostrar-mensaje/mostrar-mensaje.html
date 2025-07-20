@@ -1,0 +1,14 @@
+<div class="container text-center">
+    <h2 class="fw-bold mt-3 text-center text-warning">{{tituloMostrarMensaje}}</h2>
+    <div class="d-flex justify-content-center mt-3">
+        <button class="btn btn-primary me-2" (click)="mostrarMensaje()">
+            Ver mensaje
+        </button>
+        <button class="btn btn-danger" (click)="resetearMensaje()">
+            Resetear mensaje
+        </button>
+    </div>
+    <div class="alert alert-success mt-4 mx-auto w-50">
+        {{mensaje}}
+    </div>
+</div>

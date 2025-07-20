@@ -1,0 +1,16 @@
+<div class="container text-center">
+    <h2 class="fw-bold mt-3 text-center text-warning">{{tituloReplicador}}</h2>
+    <div class="d-flex justify-content-center">
+        <div class="w-50">
+            <div class="mb-3">
+                <label for="inputTexto" class="me-3">Escribe algo aquí:</label>
+                <input id="inputTexto"  type="text" (input)="actualizarTexto($event)"/>
+            </div>
+            <div class="mb-3">
+                <label for="replicaTexto" class="me-3">Texto replicado:</label>
+                <input id="replicaTexto" type="text" [value]="texto" readonly/>
+            </div>
+        </div>
+
+    </div>
+</div>
